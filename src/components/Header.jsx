@@ -18,6 +18,10 @@ const Header = () => {
 
     const {loading,fn:fnLogout} = useFetch(logout)
 
+    const goTOAuth = () =>{
+      navigate('/auth')
+    }
+
   return (
     <>
     <nav className=' py-4 flex justify-between items-center '>
@@ -50,7 +54,7 @@ const Header = () => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-        : <Button  >Log In</Button>
+        : <Button onClick = {goTOAuth}  >Log In</Button>
        }
        </div>
     </nav>

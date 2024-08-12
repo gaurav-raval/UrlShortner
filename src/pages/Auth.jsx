@@ -32,7 +32,9 @@ const Auth = () => {
 
   },[isAuthenticated,longLink])
   return (
-    <div className='mt-20 flex flex-col items-center gap-10'>
+    <div className='flex justify-center '>
+
+<div className='mt-20 flex flex-col items-center gap-10  '>
     <h1 className='text-5xl font-extrabold'>{
 
       longLink?"Hold up! Let's login fitst...":"Login/SignUp"
@@ -48,6 +50,7 @@ const Auth = () => {
   <TabsContent value="SignUp"> <SignUp/> </TabsContent>
 </Tabs>
 
+    </div>
     </div>
   )
 }
