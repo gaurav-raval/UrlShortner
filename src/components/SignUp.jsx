@@ -128,8 +128,10 @@ const Signup = () => {
     {errors.password && <Error message={errors.password} />}
     </div>
     <div className='space-y-1'>
-    <Input name='profile_pic' type='file' accept = 'image/*'
+      <label className=' text-sm text-muted-foreground ml-1' htmlFor="profile_pic">Profile Photo(optional)</label>
+    <Input placeholder= 'Profile Photo(optional)' name='profile_pic' type='file' accept = 'image/*'
         onChange={handleInputChange}
+        className = 'cursor-pointer'
 
     />
     {errors.profile_pic && <Error message={errors.password} />}

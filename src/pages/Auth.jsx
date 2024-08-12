@@ -35,13 +35,13 @@ const Auth = () => {
     <div className='flex justify-center '>
 
 <div className='mt-20 flex flex-col items-center gap-10  '>
-    <h1 className='text-5xl font-extrabold'>{
+    <h1 className=' text-3xl sm:text-5xl font-extrabold'>{
 
       longLink?"Hold up! Let's login fitst...":"Login/SignUp"
 }</h1>
 
 
-<Tabs defaultValue="Login" className="w-[400px]">
+<Tabs defaultValue="Login" className="w-[300px] sm:w-[400px]">
   <TabsList className='grid w-full grid-cols-2' >
     <TabsTrigger value="Login" >Login</TabsTrigger>
     <TabsTrigger value="SignUp">SignUp</TabsTrigger>

@@ -94,16 +94,17 @@ const Login = () => {
   }
   return (
     <div>
-      <Card>
+      <Card className= ''>
   <CardHeader>
-    <CardTitle>Login</CardTitle>
-    <CardDescription>Login to your account if you already have one</CardDescription>
+    <CardTitle  className = 'text-center sm:text-left'>Login</CardTitle>
+    <CardDescription  className = 'text-center sm:text-left' >Login to your account if you already have one</CardDescription>
 {error && <Error message={error.message}/>}  </CardHeader>
   <CardContent className = 'space-y-2' >
     <div className='space-y-1'>
     <Input name='email' type='email' placeholder ='Enter Email'
     
     onChange={handleInputChange}
+     
     />
     {errors.email && <Error message={errors.email} />}
     </div>
@@ -111,12 +112,14 @@ const Login = () => {
     <Input name='password' type='password' placeholder ='Enter Password'
         onChange={handleInputChange}
 
+        
+
     />
     {errors.password && <Error message={errors.password} />}
     </div>
   </CardContent>
-  <CardFooter>
-    <Button onClick = {handleLogin} >
+  <CardFooter className= ' '>
+    <Button onClick = {handleLogin}   >
       {
         loading? <BeatLoader size={10} color='#36d7b7'/> : 'Login'
       }
