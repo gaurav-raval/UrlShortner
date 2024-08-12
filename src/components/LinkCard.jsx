@@ -43,12 +43,12 @@ const LinkCard = ({url,fetchUrl}) => {
   const {loading: deleteLoading , fn: fnDelete} = useFetch(deleteUrl,url?.id);
   return (
     <>
-    <div className='flex flex-col md:flex-row gap-5 border p-4 bg-gray-900 rounded-lg justify-between  '>
+    <div className='flex flex-col md:flex-row gap-5 border p-4 bg-gray-900 rounded-lg justify-between  w-[300px] sm:w-full  '>
 
-     <div className='flex gap-5'>
-     <img src={url.qr} alt="" className='h-32 object-contain ring ring-blue-500 self-start' />
+     <div className='flex gap-5 flex-grow'>
+     <img src={url.qr} alt="" className=' h-24 sm:h-32 object-contain ring ring-blue-500 self-start' />
        
-       <Link to={`/link/${url.id}`} className='flex flex-col gap-1'>
+       <Link to={`/link/${url.id}`} className='flex flex-col gap-1  min-w-0'>
        
        
        <span className='text-3xl font-extrabold hover:underline cursor-pointer'>
@@ -57,7 +57,7 @@ const LinkCard = ({url,fetchUrl}) => {
        <span className=' text-xs  sm:text-2xl text-blue-400 font-bold hover:underline cursor-pointer'>
          {url?.custorm_url ? `trimmr.online/${url?.custorm_url}`:`trimmr.online/${url?.short_url}`}
          </span>
-       <span className=' text-xs  sm:text-2xl flex items-center h-auto hover:underline cursor-pointer'>
+       <span className=' text-start  sm:text-2xl flex items-center h-auto hover:underline cursor-pointer truncate  overflow-hidden  text-ellipsis  whitespace-nowrap '>
          {url?.original}
          </span>
        <span className=' flex items-end font-extralight text-sm flex-1'>
