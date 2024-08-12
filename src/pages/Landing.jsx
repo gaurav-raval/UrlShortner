@@ -69,7 +69,7 @@ const Landing = () => {
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>
-            What analytics are available for my ?
+            What analytics are available for my shortened URLs?
           </AccordionTrigger>
           <AccordionContent>
             You can view the number of clicks, geolocation data of the clicks
