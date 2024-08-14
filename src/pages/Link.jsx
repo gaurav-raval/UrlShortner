@@ -86,12 +86,12 @@ const LinkPage = () => {
             https://trimrr.online/{link}
           </a>
           <a
-            href={url?.original_url}
+            href={url?.original}
             target="_blank"
             className="flex items-center gap-1 hover:underline cursor-pointer"
           >
             <LinkIcon className="p-1" />
-            {url?.original_url}
+            {url?.original}
           </a>
           <span className="flex items-end font-extralight text-sm">
             {new Date(url?.created_at).toLocaleString()}
