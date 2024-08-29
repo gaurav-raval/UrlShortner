@@ -116,7 +116,7 @@ onOpenChange={(res) => {if (!res)setSearchParams({})  } } >
    {errors.longUrl && <Error message = {errors.longUrl}/>}
 
   <div className='flex items-center gap-2'>
-    <Card className= 'p-2'>trimmer.in</Card>
+    <Card className= 'p-2'>trimmer.online/</Card>
     <Input id='customUrl' placeholder="Custom URL(optional)" onChange= {handleChange} />
   </div>
 
