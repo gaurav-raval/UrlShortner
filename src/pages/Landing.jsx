@@ -36,7 +36,7 @@ const Landing = () => {
 
        <form onSubmit={handleShorten} className='sm:h-14 flex flex-col sm:flex-row w-full md:w-2/4 gap-2 items-center' >
 
-        <Input type= 'url' placeholder ="paste your loooong URL"
+        <Input type= 'url' placeholder ="paste your long URL"
         className = 'h-full flex-1 py-4 px-4'
         value = {longUrl}
 
